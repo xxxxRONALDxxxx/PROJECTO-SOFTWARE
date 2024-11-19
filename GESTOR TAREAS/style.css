@@ -1,0 +1,279 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #007bff; /* Fondo azul para toda la pantalla */
+  color: #fff;
+}
+
+/* Mitad izquierda con el logo */
+.left-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: #007bff; /* Fondo azul para mantener consistencia */
+}
+
+.logo {
+  width: 60%; /* Ajusta el tamaño del logo */
+  max-width: 300px;
+}
+
+/* Mitad derecha que ocupa todo el espacio para la caja de inicio de sesión */
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: #007bff; /* Fondo azul para la mitad derecha */
+}
+
+.login-container {
+  width: 80%; /* Ocupa la mayor parte del ancho de la mitad derecha */
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  color: #333;
+}
+
+.login-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+.login-btn, .register-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #28a745; /* Botón verde */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover, .register-btn:hover {
+  background-color: #218838;
+}
+
+.forgot-password, .register {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.forgot-password {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.register {
+  color: #333;
+  text-decoration: none;
+}
+
+.register:hover {
+    text-decoration: underline;
+}
+
+
+/* Ocultar la contraseña */
+.show-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #28a745;
+}
+
+/* Dashboard */
+.dashboard {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  border-radius: 8px;
+  margin: 2rem;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+
+.action-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #218838;
+}
+
+.input-group input:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    outline: none;
+}
+
+.crear-tarea-btn, .editar-btn, .eliminar-btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.crear-tarea-btn:hover, .editar-btn:hover, .eliminar-btn:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+/* Estilo para el Dashboard */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.tarea-list {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.tarea-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tarea-table th, .tarea-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tarea-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.tarea-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para el enlace de Cerrar sesión */
+.logout-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    background-color: #e60000;
+}
+
+span {
+    color: green; /* Cambiar el color del chulito */
+    font-weight: bold; /* Hacerlo más prominente */
+    font-size: 18px; /* Ajustar el tamaño */
+}
